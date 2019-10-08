@@ -10,3 +10,6 @@ artifactID : identifiant de l'artifact (du projet)
 <maven.compiler.target> c'est pour spécifiier la version de java à utiliser pour executer les .java
 
 8. le class path sert à spécifier ou est la classe à executer.
+
+
+Ceci est une modification
