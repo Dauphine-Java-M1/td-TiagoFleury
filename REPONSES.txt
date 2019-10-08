@@ -1,6 +1,9 @@
 Tiago Fleury
 
 
+modification au début
+
+
 POM : fichier xml qui décrit comment est construit tout le projet
 
 groupID : paramètre du POM. L'identifiant du groupe auquel appartient le projet
