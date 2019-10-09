@@ -1,9 +1,6 @@
 Tiago Fleury
 
-
-modification au début
-
-
+################# - TD00 -
 POM : fichier xml qui décrit comment est construit tout le projet
 
 groupID : paramètre du POM. L'identifiant du groupe auquel appartient le projet
@@ -15,4 +12,33 @@ artifactID : identifiant de l'artifact (du projet)
 8. le class path sert à spécifier ou est la classe à executer.
 
 
-Ceci est une modification
+################ - TD00bis -
+
+
+
+Exercice 1:
+
+2. Les fichiers qui ne peuvent pas être regénérés sont le pom.xml, PrimeCollection.java et le fichier REPONSES.txt
+   Le fichier td00-1.0-SNAPSHOT.jar lui peut être regénéré facilement.
+   
+5. Git affiche ce qui diffère entre la version précédente et celle que je suis en train d'écrire
+	COMMANDE > git diff
+	
+10. Comparer dernier et avant dernier commit avec > git diff HEAD HEAD^
+
+
+
+Exercice 2:
+
+3. La branche master apparait en vert
+
+5. Il y a une erreur, je ne peux pas push sur master car la branche contient du travail que je n'ai pas en local.
+
+6. Les deux versions du fichier REPONSE ont été fusionnées.
+
+7. Si les deux changements avaient été faits sur la même ligne, il y aurait eu un conflit.
+
+
+Exercice 3 :
+
+2. La méthode assertTrue(param) valide le test si la valeur entre parenthèse est un booléen true
