@@ -27,8 +27,17 @@ public class PrimeCollectionTest extends TestCase{
     /**
      * Rigourous Test :-)
      */
-    public void testPrimeCollection()
-    {
+    public void testPrimeCollection(){
         assertTrue( true );
+    }
+    public void test0IsPrime() {
+    	
+    	assertTrue(PrimeCollection.isPrime(0));
+    }
+    public void testTwoIsPrime() {
+    	assertTrue(PrimeCollection.isPrime(2));
+    }
+    public void test9IsNotPrime() {
+    	assertTrue( !( PrimeCollection.isPrime(9) ) );
     }
 }

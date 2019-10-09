@@ -21,12 +21,14 @@ public class PrimeCollection {
 		}
 	}
 	
-	private boolean isPrime(int p) {
+	public static boolean isPrime(int p) {
+		if(p == 0)return true;
 		if(p == 1)return false;
-		for(int i=1;i<Math.sqrt(p);i++) {
-			if(p%i == 0)return true;
+		for(int i=2;i<=Math.sqrt(p);i++) {
+			System.out.println("i : "+i);
+			if(p%i == 0)return false;
 		}
-		return false;
+		return true;
 	}
 	
 	public void printPrimes() {
