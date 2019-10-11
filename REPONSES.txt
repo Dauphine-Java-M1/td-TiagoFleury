@@ -42,3 +42,57 @@ Exercice 2:
 Exercice 3 :
 
 2. La méthode assertTrue(param) valide le test si la valeur entre parenthèse est un booléen true
+
+
+
+################ - TD01 -
+
+Exercice 1 :
+
+1. Cela fonctionne parce qu'on fait appel aux attributs depuis la classe Point.
+Egalement parce qu'il y a un constructeur par défaut qui initialise les attributs à null quand on n'en définit pas.
+
+
+2. Il y a une erreur à la compilation parce qu'on ne peut pas accéder aux attributs. Pour y remédier il faut faire des accesseurs ou bien passer les attributs en public.
+
+3. On préfère mettre les champs d'une classe en privé pour éviter que des autres programmeurs qui ne savent pas comment fonctionne la classe puisse modifier les valeurs des attributs
+	de manière 'brutale'
+	
+4. Un accesseur est une fonction qui sert à renvoyer la valeur d'un attribut. Il y en a une par attribut. Il serait bien d'en faire un ici.
+
+5. A partir du moment ou on a créé un constructeur, le constructeur par défaut de java n'existe plus. Il faut donc recréer un constructeur avec zero paramètres.
+
+6. Il y a une ambiguité dans le nom des variables. On peut utiliser le mot clé this pour éviter toute ambiguité.
+
+7. Il faut créer un compteur statique qui est incrémenté chaque fois qu'un objet Point est instancié.
+
+8. Il appelle le constructeur qui correspond aux paramètres qu'on a rentré.
+
+9. Il faut réecrire la méthode toString()
+
+
+
+
+
+Exercice 2 :
+
+1.Il affiche :
+
+true
+false
+
+Parce que p2 et p1 pointent vers la même adresse mémoire alors que p3 pointe vers un autre objet qui est situé à une autre adresse mémoire.
+
+
+2. La recherche de l'indice fonctionne bien pour p2 mais pas pour p3 alors qu'ils ont les mêmes coordonnées. C'est parce que indexOf utilise la fonction equals() de la classe Object.
+
+
+
+
+
+Exercice 3 :
+
+
+
+
+
