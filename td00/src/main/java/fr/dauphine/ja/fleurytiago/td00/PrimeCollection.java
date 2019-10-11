@@ -25,7 +25,6 @@ public class PrimeCollection {
 		if(p == 0)return true;
 		if(p == 1)return false;
 		for(int i=2;i<=Math.sqrt(p);i++) {
-			System.out.println("i : "+i);
 			if(p%i == 0)return false;
 		}
 		return true;
