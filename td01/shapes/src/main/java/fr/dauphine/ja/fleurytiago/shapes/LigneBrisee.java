@@ -1,23 +1,42 @@
 package fr.dauphine.ja.fleurytiago.shapes;
 
+import java.util.LinkedList;
+import java.util.Objects;
+
 public class LigneBrisee {
-	private Point[] points;
-	private int in;
+	private LinkedList<Point> points;
 	
 	public LigneBrisee() {
-		in=0;
-		points = new Point[0];
-	}
-	
-	public LigneBrisee(int tailleMax) {
-		in=0;
-		points = new Point[tailleMax];
+		points = new LinkedList<Point>();
 	}
 	
 	
 	public void add(Point p) {
-		if(in>=points.length)
-			System.out.println("Dépassement de tableau");
-		else points[in++]=p;
+		Objects.requireNonNull(p);
+		points.add(p);
+	}
+	
+	
+	public int nbPoints() {
+		return points.size();
+	}
+	
+	public boolean contains(Point p) {
+		return points.contains(p);
+	}
+	
+	
+	public static void main(String[] args) {
+		LigneBrisee ligne = new LigneBrisee();
+		ligne.add(new Point(0,0));
+		ligne.add(new Point(0,3));
+		ligne.add(new Point(0,5));
+		ligne.add(new Point(3,0));
+		try {
+		ligne.add(null);
+		}catch(NullPointerException e) {
+			System.out.println("Interdit d'ajouter null.");
+		}
+		System.out.println(ligne.contains(new Point(3,0)));
 	}
 }

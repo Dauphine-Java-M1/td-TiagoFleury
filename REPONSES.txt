@@ -87,12 +87,23 @@ Parce que p2 et p1 pointent vers la même adresse mémoire alors que p3 pointe v
 2. La recherche de l'indice fonctionne bien pour p2 mais pas pour p3 alors qu'ils ont les mêmes coordonnées. C'est parce que indexOf utilise la fonction equals() de la classe Object.
 
 
-3. Si on dépasse la capacité fixée, il y a une erreur à l'execution. Ce qu'on essaie d'éviter le plus possible.
 
 
 Exercice 3 :
 
 
+2. Si on dépasse la capacité fixée, il y a une erreur à l'execution. Ce qu'on essaie d'éviter le plus possible. Pour régler ca on peut ajouter une condition.
+
+5. Si null est passé en argument, la fonction retourne false. Même si on a fait add(null) avant.
+Objects.requireNonNull() lève une NullPointerException si l'argument passé est null.
+
+
+6. pointCapacity() ne sert plus à rien. nbPoints() est utilisée directement avec points.size() et contains() avec points.contains()
+Pour contains, maintenant on peut ajouter un point null dans la liste et le détecter avec points.contains(null). Il faut donc utiliser la fonction Object.requireNonNull() pour lever une exception.
+
+
+
+Exercice 4 :
 
 
 
