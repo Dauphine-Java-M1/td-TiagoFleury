@@ -24,7 +24,7 @@ public class LigneBrisee {
 	public boolean contains(Point p) {
 		return points.contains(p);
 	}
-	
+	//Commentaire inutile.
 	
 	public static void main(String[] args) {
 		LigneBrisee ligne = new LigneBrisee();
