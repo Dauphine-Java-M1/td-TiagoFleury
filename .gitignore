@@ -1,0 +1,12 @@
+
+td01/.project
+td01/shapes/.classpath
+td01/shapes/.project
+td01/shapes/.settings/org.eclipse.core.resources.prefs
+td01/shapes/.settings/org.eclipse.jdt.core.prefs
+td01/shapes/.settings/org.eclipse.m2e.core.prefs
+td01/shapes/bin/.project
+td01/shapes/bin/.settings/org.eclipse.core.resources.prefs
+td01/shapes/bin/pom.xml
+td01/shapes/bin/src/main/java/fr/dauphine/ja/fleurytiago/shapes/LigneBrisee.class
+td01/shapes/bin/src/main/java/fr/dauphine/ja/fleurytiago/shapes/Point.class
