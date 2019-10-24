@@ -20,13 +20,9 @@ public class Ring extends Circle {
 	public boolean equals(Object obj) {
 		// TODO Auto-generated method stub
 		
-		if(obj instanceof Ring) {
+		if(obj.getClass().equals(this.getCenter())) {
 			Ring r = (Ring) obj;
-			return super.equals(r) && innerRadius == r.getInnerRadius();
-		}
-		if(obj instanceof Circle) {
-			Circle c = (Circle) obj;
-			return super.equals(c) && innerRadius == 0;
+			return (super.equals(new Circle(center, radius)) && innerRadius == r.getInnerRadius());
 		}
 		return false;
 	}

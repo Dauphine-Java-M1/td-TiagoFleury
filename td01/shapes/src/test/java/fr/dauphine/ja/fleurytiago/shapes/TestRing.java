@@ -5,6 +5,12 @@ import junit.framework.TestCase;
 public class TestRing extends TestCase {
 	
 	public void testEquals() {
-		Ring r = new Ring();
+		Point p = new Point(1,1);
+		Ring r = new Ring(p.clone(),3,2);
+
+		Ring r2 = new Ring(p.clone(),3,2);
+		
+		assertTrue(r2.equals(r));
 	}
+		
 }
