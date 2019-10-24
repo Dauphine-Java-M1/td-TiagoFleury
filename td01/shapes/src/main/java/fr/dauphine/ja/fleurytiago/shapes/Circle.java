@@ -3,8 +3,8 @@ package fr.dauphine.ja.fleurytiago.shapes;
 import java.util.List;
 
 public class Circle {
-	private Point center;
-	private double radius;
+	protected Point center;
+	protected double radius;
 	
 	
 	public Circle() {

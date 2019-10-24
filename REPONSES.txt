@@ -116,6 +116,11 @@ Il est préférable de retourner une copie du centre.
 
 Exercice 5 :
 
+1. Il est intéressant de faire de l'héritage car l'anneau a tous les attributs et propriétés du cercle (radius, centre, surface, contenance).
+
+Il faudra juste rajouter des attributs et réecrire certaines méthodes.
+
+
 
 
 
