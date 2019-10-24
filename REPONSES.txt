@@ -105,5 +105,20 @@ Pour contains, maintenant on peut ajouter un point null dans la liste et le dét
 
 Exercice 4 :
 
+5. Le problème est que les deux cercles vont être translatés.
+   Pour éviter ça on peut faire une copie des valeurs du point passé en paramètre ou bien le cloner avant de le mettre en paramètre de la fonction.
+   
+6. Le problème est que si on récupère le centre de cette manière, on peut appliquer des modifications au centre du Cercle.
+Il est préférable de retourner une copie du centre.
+
+9. Il est préférable d'en faire une méthode statique parce qu'elle ne dépend pas de l'instance de cercle qui l'appelle mais uniquement des paramètre.
+
+
+Exercice 5 :
+
+
+
+
+
 
 

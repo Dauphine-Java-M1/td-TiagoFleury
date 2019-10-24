@@ -43,9 +43,15 @@ public class Point {
     
     
     
+    public void translate(int dx, int dy) {
+    	x+=dx;
+    	y+=dy;
+    }
     
     
-    
+    public Point clone() {
+    	return new Point(this);
+    }
     
     
     

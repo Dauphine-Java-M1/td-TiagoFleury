@@ -33,10 +33,12 @@ public class LigneBrisee {
 		ligne.add(new Point(0,5));
 		ligne.add(new Point(3,0));
 		try {
-		ligne.add(null);
+			ligne.add(null);
 		}catch(NullPointerException e) {
 			System.out.println("Interdit d'ajouter null.");
 		}
 		System.out.println(ligne.contains(new Point(3,0)));
+		Circle C = new Circle(new Point(0,0),4);
+		System.out.println("contient ? "+C.contains(new Point(3,1)));
 	}
 }
