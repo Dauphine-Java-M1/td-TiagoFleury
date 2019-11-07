@@ -22,15 +22,10 @@ public class Ring extends Circle {
 	public boolean equals(Object obj) {
 		// TODO Auto-generated method stub
 		
-		if(obj instanceof Ring) {
+		if(obj.getClass().equals(this.getClass())) {
 			Ring r = (Ring) obj;
-			System.out.println("c est la");
-			System.out.println("? : "+super.equals((Circle)r));
-			return (super.equals((Circle)r) && innerRadius == r.getInnerRadius());
-		}
-		if(obj instanceof Circle) {
-			Circle c = (Circle) obj;
-			return (super.equals(c) && (innerRadius == 0 || innerRadius == radius));
+
+			return (super.equals(new Circle(center, radius)) && innerRadius == r.getInnerRadius());
 		}
 		return false;
 	}

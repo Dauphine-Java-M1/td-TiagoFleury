@@ -13,5 +13,4 @@ public class TestRing extends TestCase {
 		assertTrue(r.equals(r2));
 	}
 	
-	
 }
