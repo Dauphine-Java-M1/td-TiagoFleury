@@ -42,17 +42,38 @@ public class Circle {
 		else return false;
 	}
 	
-	public static boolean contains(Point p, List<Circle> circles) {
-		for(Circle c : circles) {
-			if(c.contains(p))return true;
+	public static void test() {
+		
+	}
+	
+	
+	public static boolean contains(Point p, List<Object> circles) {
+		for(Object o : circles) {
+			Circle c = new Circle();
+			if(o.getClass().equals(c.getClass())) {
+				c = (Circle)o;
+				if(c.contains(p))return true;
+			}
+			
 		}
 		return false;
 	}
 	
-	
+	@Override
+	public boolean equals(Object obj) {
+		if(obj.getClass().equals(this.getClass())) {
+//		if(obj instanceof Circle) {
+			Circle c = (Circle)obj;
+			return (center.equals(c.getCenter()) && radius == c.getRadius() );
+		}
+		return super.equals(obj);
+	}
 	
 	//GETTER
 	public Point getCenter() {
 		return center.clone();
+	}
+	public double getRadius() {
+		return radius;
 	}
 }

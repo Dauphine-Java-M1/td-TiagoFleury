@@ -121,7 +121,8 @@ Exercice 5 :
 Il faudra juste rajouter des attributs et réecrire certaines méthodes.
 
 
-
+4. Sans code supplémentaire, c'est le toString de la classe Cercle qui est appelé. Il faut donc
+réecrire cette méthode.
 
 
 
