@@ -1,4 +1,4 @@
-package fr.dauphine.ja.fleurytiago.shapes;
+package fr.dauphine.ja.fleurytiago.shapes.model;
 
 import java.util.List;
 
