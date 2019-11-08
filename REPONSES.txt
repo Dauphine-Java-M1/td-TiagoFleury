@@ -154,4 +154,16 @@ l7 - création d'une nouvelle instance de la classe MyDisplay qui hérite de la 
 l8 - On ajoute un composant JPanel à la fenetre.
 
 
+5. La méthode paintComponent() est appelée quand on fait apparaitre la fenetre. Egalement quand on redimensionne la fenetre elle est appelée en boucle.
+
+6. Les composants awt sont lourds et demandent plus d'espace mémoire et de temps pour s'executer. AWT est la bibliotheque graphique originelle de Java. Elle est liée directement à l'os sur lequel tourne l'ordi. Une application awt peut donc avoir un visuel différent selon les systemes d'exploitation.
+
+Swing est construit sur awt. Il fournit des composants plus sophistiqués que awt. Ces composants sont plus legers. Swing est indépendant de la plateforme
+
+
+
+Exercice 2 :
+
+
+
 
