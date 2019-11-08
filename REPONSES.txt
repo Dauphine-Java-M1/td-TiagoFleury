@@ -128,3 +128,30 @@ réecrire cette méthode.
 
 
 
+
+
+
+################################# TD2 MVC #########################################
+
+Exercice 1 :
+
+1. JFrame est un type de fenetre qu'on peut créer. Il fait partie du package swing qui est arrivé après le package awt. Il faut éviter de mélanger les objets swing et les objets awt.
+On peut mettre un titre à la fenetre (setTitle), une dimension (setSize) et la rendre visible ou invisible.
+Une frame est composée de plusieurs couches. Celle où on met les éléments est la "content pane". On peut la récupérer en faisant getContentPane()
+
+JPanel est un composant de type conteneur qui sert à acceuillir d'autres objets du même type ou bien
+de type composant (boutons, cases etc...)
+
+
+3.
+
+
+l2 - instancie uen nouvelle fenetre (invisible) et en lui donnant un titre
+l3 - lui donne ses dimensions
+l4 - la rend visible
+l5 - set l'action de clic sur la croix rouge à "arreter le processus".
+l7 - création d'une nouvelle instance de la classe MyDisplay qui hérite de la classe JPanel
+l8 - On ajoute un composant JPanel à la fenetre.
+
+
+
