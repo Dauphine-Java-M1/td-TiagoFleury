@@ -8,25 +8,22 @@ import java.util.Observer;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import fr.dauphine.ja.fleurytiago.shapes.model.World;
+
 @SuppressWarnings("deprecation")
 public class MyDisplay extends JPanel implements Observer{
 
+	
+	private World world;
+	
+	
 	public MyDisplay() {
+		super();
 	}
-
-	public MyDisplay(LayoutManager layout) {
-		super(layout);
-		// TODO Auto-generated constructor stub
-	}
-
-	public MyDisplay(boolean isDoubleBuffered) {
-		super(isDoubleBuffered);
-		// TODO Auto-generated constructor stub
-	}
-
-	public MyDisplay(LayoutManager layout, boolean isDoubleBuffered) {
-		super(layout, isDoubleBuffered);
-		// TODO Auto-generated constructor stub
+	
+	public MyDisplay(World world) {
+		super();
+		this.world = world;
 	}
 	
 	@Override
@@ -36,7 +33,7 @@ public class MyDisplay extends JPanel implements Observer{
 	}
 	
 	public static void main(String[] args) {
-		JFrame frame = new JFrame("Java Avance - Graphic Display");   //
+		JFrame frame = new JFrame("Java Avance - Graphic Display");   
 		frame.setSize(500,500);
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -45,10 +42,12 @@ public class MyDisplay extends JPanel implements Observer{
 		frame.add(d);
 	}
 
-	@Override
+	
+	
+	@Override //Appelee a chaque fois qu'il y a une notif de l'observé
 	public void update(Observable arg0, Object arg1) {
 		
-		
+		repaint();
 	}
 
 }

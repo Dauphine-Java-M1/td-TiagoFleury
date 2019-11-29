@@ -2,7 +2,7 @@ package fr.dauphine.ja.fleurytiago.shapes.model;
 
 import java.util.ArrayList;
 
-public class Point {
+public class Point{
 	
 	private Integer x;
 	private Integer y;

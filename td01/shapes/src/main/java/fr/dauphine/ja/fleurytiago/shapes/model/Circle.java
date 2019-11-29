@@ -2,7 +2,7 @@ package fr.dauphine.ja.fleurytiago.shapes.model;
 
 import java.util.List;
 
-public class Circle {
+public class Circle extends Shape{
 	protected Point center;
 	protected double radius;
 	
